@@ -2,6 +2,7 @@
   "name": "shopping-cart",
   "version": "1.0.0",
   "description": "Ecommerc shopping platform",
+  "author": "Manoj Kumar",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.1",
