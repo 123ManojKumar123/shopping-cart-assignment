@@ -23,6 +23,10 @@
     flex-direction: column;
     justify-content: space-between;
 
+    .lg-out {
+      cursor: pointer;
+    }
+
     .user-info {
       p {
         font-size: 15px;

@@ -32,7 +32,7 @@ export default function NavBar() {
             <p>{`Welcome ${authUser.fname}`}</p>{" "}
             <p onClick={handleLogout}>
               {" "}
-              <span>Logout</span>
+              <span className="lg-out">Logout</span>
             </p>
           </div>
         ) : (

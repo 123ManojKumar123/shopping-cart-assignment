@@ -5,7 +5,6 @@ import baby from "../../static/images/category/baby.png";
 import "./Style.scss";
 export default function Card({ index, data, img }) {
   const navigate = useNavigate();
-  console.log("Image", data.imageUrl);
   return (
     <div
       className="catogery-card"

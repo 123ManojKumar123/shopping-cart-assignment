@@ -8,8 +8,6 @@ const ProductCard = ({ item }) => {
   const [inCart, setInCart] = useState(false);
   const { cartItems } = useSelector((state) => state.Cart);
 
-  console.log("cartITems", cartItems);
-
   const handleAddtoCart = () => {
     dispatch(setCartItems([...cartItems, { ...item, qty: 1 }]));
   };
@@ -46,7 +44,6 @@ const ProductCard = ({ item }) => {
 };
 
 export default function ProductList({ data }) {
-  console.log("data", data);
   return (
     <div className="product-card-container">
       {data?.map((item) => (

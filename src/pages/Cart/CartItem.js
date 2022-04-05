@@ -13,7 +13,6 @@ export default function CartItem({ item }) {
     tempItem.qty = tempItem.qty + 1;
     let tempcart = [...cartItems];
     tempcart[searchIndex] = tempItem;
-    console.log(tempcart);
     dispatch(setCartItems(tempcart));
   };
 
@@ -28,7 +27,6 @@ export default function CartItem({ item }) {
     tempItem.qty = tempItem.qty - 1;
     let tempcart = [...cartItems];
     tempcart[searchIndex] = tempItem;
-    console.log(tempcart);
     dispatch(setCartItems(tempcart));
   };
 

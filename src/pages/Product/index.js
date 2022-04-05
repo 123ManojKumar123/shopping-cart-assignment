@@ -9,7 +9,6 @@ export default function Product() {
   const params = useParams();
   const [product, setProduct] = useState(products);
   const [selected, setSelected] = useState("");
-  console.log("Parmas", params);
 
   useEffect(() => {
     if (params?.id) {

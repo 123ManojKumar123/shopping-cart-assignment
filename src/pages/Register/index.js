@@ -15,7 +15,6 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [cnfPassword, setCnfPassword] = useState("");
   const { users } = useSelector((state) => state.User);
-  console.log("User", users);
 
   const handleSubmit = (e) => {
     e.preventDefault();
