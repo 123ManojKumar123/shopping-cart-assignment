@@ -23,6 +23,7 @@ export default function Product() {
 
   const handleChangeCatogery = (id) => {
     const filteredData = products.filter((e) => e.category === id);
+    console.log(id, 'id');
     setProduct(filteredData);
     setSelected(id);
   };

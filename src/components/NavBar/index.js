@@ -10,7 +10,7 @@ export default function NavBar() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { cartItems } = useSelector((state) => state.Cart);
-  const { users, authUser, isLogin } = useSelector((state) => state.User);
+  const { authUser, isLogin } = useSelector((state) => state.User);
   console.log("auth User", authUser, isLogin);
 
   const handleLogout = () => {

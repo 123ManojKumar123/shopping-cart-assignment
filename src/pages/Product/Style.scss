@@ -7,16 +7,17 @@
 
 .catogery-list {
   width: 25%;
-  background-color: burlywood;
+  background-color: #c6c1bc;
   height: 100%;
 
   .catogery-list-card {
     display: flex;
     justify-content: center;
     height: 50px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #9e9999;
     align-items: center;
     cursor: pointer;
+    margin: 5px;
   }
 }
 
@@ -34,7 +35,7 @@
 
   .product-card {
     width: 45%;
-    margin-top: 40px;
+    margin-bottom: 15px;
     border-bottom: 1px dotted gray;
     .title {
       height: 60px;
@@ -62,5 +63,33 @@
     .primary-cta {
       margin: 10px 0;
     }
+  }
+}
+
+.catogery-list-selection {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .products {
+    flex-direction: column !important;
+  }
+
+  .catogery-list {
+    display: none;
+  }
+
+  .catogery-list-selection {
+    display: block;
+    border: none;
+    background-color: #db2424;
+    color: white;
+    height: 50px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+
+  .product-card {
+    width: 90% !important;
   }
 }
